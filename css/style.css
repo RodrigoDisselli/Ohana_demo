@@ -26,3 +26,7 @@ body *{
 .margin-bottom-24 {
     margin-bottom: 24px;
 }
+
+.col.column {
+    flex-direction: column;
+}
