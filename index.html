@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/ico" href="https://ohana.s3.us-east-2.amazonaws.com/assets/ohana_logo_title.png" />
+    <title>Ohana - Demo</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://ohana.s3.us-east-2.amazonaws.com/minify2.0.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="block">
+            <div class="col">
+                <h1 class="text-primary-color margin-bottom-24">Definir estilos</h1>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h2>Alterar cores primárias</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h5>primaryColor('#000000')</h5>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <button onclick="primaryColor('#FF3A3A')" class="secondary margin12">Vermelho</button>
+                <button onclick="primaryColor('#B546FF')" class="secondary margin12">Roxo</button>
+                <button onclick="primaryColor('#FFA319')" class="secondary margin12">Laranja</button>
+                <button onclick="primaryColor('#12D560')" class="secondary margin12">Verde</button>
+                <button onclick="primaryColor('#3A54FF')" class="secondary margin12">Azul</button>
+                <button onclick="primaryColor('#333333')" class="secondary margin12">Preto</button>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="block">
+            <div class="col">
+                <h2>Alterar formas</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h5>borderRadius(4)</h5>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <button onclick="borderRadius(0)" class="margin12">0</button>
+                <button onclick="borderRadius(4)" class="margin12">4</button>
+                <button onclick="borderRadius(8)" class="margin12">8</button>
+                <button onclick="borderRadius(12)" class="margin12">12</button>
+                <button onclick="borderRadius(24)" class="margin12">24</button>
+                <button onclick="borderRadius(56)" class="margin12">56</button>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="block">
+            <div class="col">
+                <h2>Alterar cor dos textos</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h5>textColor("#333333")</h5>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <button onclick="textColor('#FF3A3A')" class="secondary margin12">Vermelho</button>
+                <button onclick="textColor('#B546FF')" class="secondary margin12">Roxo</button>
+                <button onclick="textColor('#FFA319')" class="secondary margin12">Laranja</button>
+                <button onclick="textColor('#12D560')" class="secondary margin12">Verde</button>
+                <button onclick="textColor('#3A54FF')" class="secondary margin12">Azul</button>
+                <button onclick="textColor('#333333')" class="secondary margin12">Preto</button>
+                <button onclick="textColor('#FFFFFF')" class="secondary margin12">Branco</button>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="block">
+            <div class="col">
+                <h2>Alterar cor do background</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h5>backgroundColor("#FFFFFF")</h5>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <button onclick="backgroundColor('#FFFFFF')" class="margin12">Branco</button>
+                <button onclick="backgroundColor('#F5F5F5')" class="margin12">Cinza</button>
+                <button onclick="backgroundColor('#333333')" class="margin12">Preto</button>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="block">
+            <div class="col">
+                <h2>Altere a ordem dos elementos</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h5>Insira as classes: order1, order2, order3...  mob-order1, mob-order2, mob-order3...</h5>
+            </div>
+        </div>
+        <div class="block">
+            <div id="card1" class="col box">
+                <div class="card margin12">
+                    <span class="title"><h1>Card 1</h1></span>
+                    <!-- <span class="subtitle">Toda essa personalização com o mínimo esforço</span> -->
+                    <button onclick="orderCards('card1')" class="margin12">Ir para a primeira posição</button>
+                </div>
+            </div>
+            <div id="card2" class="col box">
+                <div class="card margin12">
+                    <span class="title"><h1>Card 2</h1></span>
+                    <button onclick="orderCards('card2')" class="margin12">Ir para a primeira posição</button>
+                </div>
+            </div>
+            <div id="card3" class="col box">
+                <div class="card margin12">
+                    <span class="title"><h1>Card 3</h1></span>
+                    <button onclick="orderCards('card3')" class="margin12">Ir para a primeira posição</button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <hr class="divider">
+        <div class="block">
+            <div class="col">
+                <h1 class="text-primary-color margin-bottom-24">Componentes</h1>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h2>Botões</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h5>O Ohana mostra uma grande variação de botões compativeis com a grande maioria das interfaces atuais</h5>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <button class="margin12">Primário</button>
+                <button class="secondary margin12">Secundário</button>
+                <button class="dashed margin12">Pontilhado</button>
+                <button class="only-text margin12">Só texto</button>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="block">
+            <div class="col">
+                <h2>Inputs</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <h5>O Ohana entrega diferentes tipos de inputs com acabamentos bem feitos e preparados para receber mensagens de ajuda e/ou erro</h5>
+            </div>
+        </div>
+        <div class="block">
+            <div class="col">
+                <form class="form margin12">
+                    <div class="input">
+                    <label>Label</label>
+                        <input class="" type="text" />
+                        <span class="label-help">Description of the field</span>
+                    </div>
+                    <div class="input">
+                    <label>Select</label>
+                        <select name="select" class="large">
+                            <option value="valor1">Value 1</option>
+                            <option value="valor2" selected>Value 2</option>
+                            <option value="valor3">Value 3</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <label>Select</label>
+                        <textarea></textarea>
+                        </div>
+                    <button class="submit large">Submit form</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ohana.s3.us-east-2.amazonaws.com/js/defineStyle.js"></script>
+    <script src="https://ohana.s3.us-east-2.amazonaws.com/js/floatingButton.js"></script>
+    <script src="js/card.js"></script>
+  </body>
+</html>

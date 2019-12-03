@@ -1,0 +1,28 @@
+.margin12 {
+    margin: 24px 12px 0px 12px;
+}
+
+.col {
+    padding: 0px 8px;
+}
+
+body {
+    padding: 24px 0px;
+}
+
+body *{
+    transition: all .8s;
+}
+
+.col.box {
+    min-width: 100px;
+    width: auto !important;
+}
+
+.sub {
+    display: block;
+}
+
+.margin-bottom-24 {
+    margin-bottom: 24px;
+}
