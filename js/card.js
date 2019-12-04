@@ -19,3 +19,26 @@ function orderCards(card) {
         card3.classList.add("order1");
     }
 }
+
+
+
+function transformSpotify() {
+    backgroundColor("#121212");
+    primaryColor("#1DB954");
+    borderRadius(36);
+    textColor("#FFFFFF");
+}
+
+function transformOhana() {
+    backgroundColor("#FFFFFF");
+    primaryColor("#0590FF");
+    borderRadius(4);
+    textColor("#333333");
+}
+
+function transformFacebook() {
+    backgroundColor("#FFFFFF");
+    primaryColor("#3A559F");
+    borderRadius(4);
+    textColor("#333333");
+}

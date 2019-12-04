@@ -27,6 +27,93 @@ body *{
     margin-bottom: 24px;
 }
 
+
 .col.column {
     flex-direction: column;
+}
+
+
+
+
+.card-produto-list {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-produto {
+    padding: 20px;
+    box-shadow: 0px 1px 3px #00000033;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+    flex-grow: 1;
+}
+
+.card-produto-img {
+    width: 60px;
+    height: 60px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 60px;
+}
+
+.card-produto-title {
+    margin: 6px 0px 12px 0px;
+}
+
+
+.spotify > .card-produto-img {
+    background-image: url("../img/Spotify-logo.png");
+}
+
+.ohana > .card-produto-img {
+    background-image: url("../img/ohana_logo_text.png");
+}
+
+.facebook > .card-produto-img {
+    background-image: url("../img/face_logo.png");
+}
+
+
+.card-produto.spotify {
+    background-color: #121212;
+}
+
+.card-produto.ohana {
+    background-color: #FFFFFF;
+}
+
+.card-produto.facebook {
+    background-color: #FFFFFF;
+}
+
+.spotify > .card-produto-btn {
+    background-color: #1DB954;
+    border-radius: 50px;
+}
+
+.ohana > .card-produto-btn {
+    background-color: #0590FF;
+    border-radius: 4px;
+}
+
+.facebook > .card-produto-btn {
+    background-color: #3A559F;
+    border-radius: 4px;
+}
+
+.spotify > .card-produto-title {
+    color: #FFFFFF;
+}
+
+.ohana > .card-produto-title {
+    color: #333333;
+}
+
+.facebook > .card-produto-title {
+    color: #333333;
 }
